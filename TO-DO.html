@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="HEAD">
+        <div class="container">
+            <h1>TO-DO List</h1>
+            <div class="cont">
+                <span id="alert"></span>
+                <input type="text" class="input-group__input" oninput="inputClear()" id="Task1" placeholder="Enter a New Task">
+                <button onclick="addpara()" id="add">ADD</button>
+                <p class="total">Total-Tasks:<span id="value1">0</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="contain">
+            <div class="task">
+                <div class="head">
+                    <p class="tdP"><b>TO-DO</b></p>
+                </div>
+                <div id="tasks" class="toAdd"  ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            </div>
+
+            <div class="task">
+                <div class="head">
+                    <p class="tdP"><b>DOING</b></p>
+                </div>
+                <div id="taks123" class="toAdd2" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            </div>
+            
+            <div class="task">
+                <div class="head">
+                    <p class="tdP"><b>DONE</b></p>
+                </div>
+                <div id="taks123" class="toAdd2" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
+            </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
